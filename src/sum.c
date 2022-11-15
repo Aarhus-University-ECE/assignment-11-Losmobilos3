@@ -18,12 +18,23 @@ int sum (int n)
 /* Sum integers 1 to n */
 int sumtail (int n, int total)
 {
-    return 0;
+  assert(n >= 1);
+  if (n == 1)
+    return total + n;
+
+  return sumtail(n-1, total + n);
 }
 
 /* Sum integers 1 to n */
 int sumwhile (int n)
 {
-  return 0;
+  assert(n >= 1);
+  int total = 0;
+  while (n != 0)
+  {
+    total += n;
+    n--;
+  }
+  return total;
 }
 
