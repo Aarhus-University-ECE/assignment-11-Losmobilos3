@@ -14,13 +14,17 @@ extern "C"
 TEST_CASE("sumtail")
 {
     // Add the tests for excercise 3 "sumtail" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(sumtail(3, 0) == 6); // normal case
+    REQUIRE(sumtail(1, 0) == 1); // edge case
+    // I would test if it aborts, but i don't know how to write the require function for that... sumtail(-1, 0) -> abort()
 }
 
 TEST_CASE("sumwhile")
 {
     // Add the tests for excercise 3 "sumwhile" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(sumwhile(3) == 6); // Normal case
+    REQUIRE(sumwhile(1) == 1); // Edge case
+    // I would test if it aborts, but i don't know how to write the require function for that... sumwhile(-1) -> abort()
 }
 
 TEST_CASE("sumn")
@@ -33,7 +37,9 @@ TEST_CASE("sumn")
 TEST_CASE("fib")
 {
    // Add the tests for excercise 4 "fib" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(fib(1, 0, 0) == 1); // Tests edge case
+    REQUIRE(fib(10, 0, 0) == 55); // Tests normal case
+    // I would test if it aborts, but i don't know how to write the require function for that... fib(-1, 0, 0) -> abort()
 }
 
 
