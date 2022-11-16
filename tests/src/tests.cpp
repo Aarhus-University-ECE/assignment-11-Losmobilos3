@@ -38,6 +38,7 @@ TEST_CASE("fib")
 {
    // Add the tests for excercise 4 "fib" function here. Use "REQUIRE()" statement to check. 
     REQUIRE(fib(1, 0, 0) == 1); // Tests edge case
+    REQUIRE(fib(2, 0, 0) == 1); // Tests edge case
     REQUIRE(fib(10, 0, 0) == 55); // Tests normal case
     // I would test if it aborts, but i don't know how to write the require function for that... fib(-1, 0, 0) -> abort()
 }
